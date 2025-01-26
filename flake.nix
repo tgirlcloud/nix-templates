@@ -1,7 +1,7 @@
 {
   inputs = { };
 
-  outputs = {
+  outputs = _: {
     templates = {
       c = {
         path = ./c;
