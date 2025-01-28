@@ -13,14 +13,24 @@
         description = "A C/C++ template";
       };
 
-      latex = {
-        path = ./latex;
-        description = "A LaTeX template";
+      flake-utils = {
+        path = ./flake-utils;
+        description = "A flake-utils template";
       };
 
       go = {
         path = ./go;
         description = "A Golang template";
+      };
+
+      latex = {
+        path = ./latex;
+        description = "A LaTeX template";
+      };
+
+      nixpkgs-extened-lib = {
+        path = ./nixpkgs-extended-lib;
+        description = "A Nixpkgs extended library template";
       };
 
       node = {
@@ -41,11 +51,6 @@
       rust = {
         path = ./rust;
         description = "A Rust template";
-      };
-
-      flake-utils = {
-        path = ./flake-utils;
-        description = "A flake-utils template";
       };
     };
   };
