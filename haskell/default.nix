@@ -12,8 +12,8 @@ haskellPackages.mkDerivation {
   executableHaskellDepends = with haskellPackages; [ ];
 
   description = "A example haskell project using nix";
-  homepage = "https://github.com/isabelroses/example-haskell";
-  maintainers = with lib.maintainers; [ isabelroses ];
+  homepage = "https://github.com/";
+  maintainers = with lib.maintainers; [ ];
   license = lib.licenses.mit;
   mainProgram = "example";
 }

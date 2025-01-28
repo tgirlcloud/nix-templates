@@ -18,9 +18,9 @@ buildGoModule {
 
   meta = {
     description = "A example go project using nix";
-    homepage = "https://github.com/isabelroses/example-go";
+    homepage = "https://github.com/";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ isabelroses ];
+    maintainers = with lib.maintainers; [ ];
     mainPackage = "example";
   };
 }

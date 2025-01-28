@@ -1,6 +1,6 @@
 { lib, stdenv }:
 stdenv.mkDerivation {
-  pname = "example-nix";
+  pname = "example-rough-base";
   version = "0.1.0";
 
   src = lib.fileset.toSource {
@@ -13,10 +13,10 @@ stdenv.mkDerivation {
   };
 
   meta = {
-    homepage = "https://github.com/isabelroses/example-nix";
+    homepage = "https://github.com/";
     description = "An example Nix project";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ isabelroses ];
+    maintainers = with lib.maintainers; [ ];
     mainPackage = "example";
   };
 }

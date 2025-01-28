@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage {
   meta = {
     inherit (toml) homepage description;
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ isabelroses ];
+    maintainers = with lib.maintainers; [ ];
     mainPackage = "example";
   };
 }

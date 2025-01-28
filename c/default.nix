@@ -9,9 +9,9 @@ clangStdenv.mkDerivation {
 
   meta = {
     description = "A example C/C++ project using nix";
-    homepage = "https://github.com/isabelroses/example-c-cpp";
+    homepage = "https://github.com/";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ isabelroses ];
+    maintainers = with lib.maintainers; [ ];
     mainPackage = "example";
   };
 }

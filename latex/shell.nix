@@ -1,16 +1,16 @@
 {
-  stdenv,
   mkShellNoCC,
+  callPackage,
 
   # extra tooling
   just,
   texlive,
-
-  inputs, # our inputs
-  self ? inputs.self,
 }:
+let
+  defaultPackage = callPackage ./default.nix { };
+in
 mkShellNoCC {
-  inputsFrom = [ self.packages.${stdenv.hostPlatform.system}.default ];
+  inputsFrom = [ defaultPackage ];
 
   packages = [
     just

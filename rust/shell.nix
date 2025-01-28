@@ -1,17 +1,17 @@
 {
-  stdenv,
   mkShell,
+  callPackage,
 
   # extra tooling
   clippy,
   rustfmt,
   rust-analyzer,
-
-  inputs, # our inputs
-  self ? inputs.self,
 }:
+let
+  defaultPackage = callPackage ./default.nix { };
+in
 mkShell {
-  inputsFrom = [ self.packages.${stdenv.hostPlatform.system}.default ];
+  inputsFrom = [ defaultPackage ];
 
   packages = [
     clippy

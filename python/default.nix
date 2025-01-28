@@ -15,9 +15,9 @@ python3Packages.buildPythonApplication {
 
   meta = {
     description = "A example python project using nix";
-    homepage = "https://github.com/isabelroses/example-python";
+    homepage = "https://github.com/";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ isabelroses ];
+    maintainers = with lib.maintainers; [ ];
     mainPackage = "example";
   };
 }

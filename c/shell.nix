@@ -1,18 +1,18 @@
 {
-  stdenv,
   mkShellNoCC,
+  callPackage,
 
   # extra tooling
   libcxx,
   gnumake,
   cppcheck,
   clang-tools,
-
-  inputs, # our inputs
-  self ? inputs.self,
 }:
+let
+  defaultPackage = callPackage ./default.nix { };
+in
 mkShellNoCC {
-  inputsFrom = [ self.packages.${stdenv.hostPlatform.system}.default ];
+  inputsFrom = [ defaultPackage ];
 
   packages = [
     libcxx # stdlib for cpp

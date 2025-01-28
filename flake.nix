@@ -33,6 +33,11 @@
         description = "A Python template";
       };
 
+      rough-base = {
+        path = ./rough-base;
+        description = "A Rough template";
+      };
+
       rust = {
         path = ./rust;
         description = "A Rust template";

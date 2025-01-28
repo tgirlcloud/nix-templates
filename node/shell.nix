@@ -1,5 +1,4 @@
 {
-  stdenv,
   mkShellNoCC,
 
   # extra tooling
@@ -7,11 +6,13 @@
   prettierd,
   typescript,
 
-  inputs, # our inputs
-  self ? inputs.self,
+  callPackage,
 }:
+let
+  defaultPackage = callPackage ./default.nix { };
+in
 mkShellNoCC {
-  inputsFrom = [ self.packages.${stdenv.hostPlatform.system}.default ];
+  inputsFrom = [ defaultPackage ];
 
   packages = [
     eslint_d
