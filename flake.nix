@@ -43,9 +43,9 @@
         description = "A Rust template";
       };
 
-      nix = {
-        path = ./nix;
-        description = "A Nix template";
+      flake-utils = {
+        path = ./flake-utils;
+        description = "A flake-utils template";
       };
     };
   };
