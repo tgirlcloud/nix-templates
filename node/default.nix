@@ -5,7 +5,7 @@ buildNpmPackage {
 
   src = ./.;
 
-  npmDepsHash = lib.fakeSha256;
+  npmDepsHash = lib.fakeHash;
 
   meta = {
     description = "A example nodejs project using nix";
