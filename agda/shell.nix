@@ -2,11 +2,13 @@
   stdenv,
   mkShell,
   time,
-  inputs,
-  self ? inputs.self,
+  callPackage,
 }:
+let
+  defaultPackage = callPackage ./default.nix { };
+in
 mkShell {
-  inputsFrom = [self.packages.${stdenv.hostPlatform.system}.default];
+  inputsFrom = [ defaultPackage ];
   packages = [
     time
   ];
