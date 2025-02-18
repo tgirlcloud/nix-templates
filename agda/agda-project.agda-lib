@@ -1,0 +1,13 @@
+-- The name of our library:
+name: agda-project
+
+-- Search for modules in directory of this file
+-- (i.e. the project root)
+include: .
+
+-- This library has a dependency on the Agda standard library
+-- Add other dependencies here.
+depend: standard-library
+
+-- Add compiler flags:
+flags:

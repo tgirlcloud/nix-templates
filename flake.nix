@@ -3,6 +3,11 @@
 
   outputs = _: {
     templates = {
+      agda = {
+        path = ./agda;
+        description = "An Agda template";
+      };
+
       c = {
         path = ./c;
         description = "A C/C++ template";
