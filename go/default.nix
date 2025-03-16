@@ -21,6 +21,6 @@ buildGoModule {
     homepage = "https://github.com/";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    mainPackage = "example";
+    mainProgram = "example";
   };
 }

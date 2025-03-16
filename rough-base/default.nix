@@ -17,6 +17,6 @@ stdenv.mkDerivation {
     description = "An example Nix project";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
-    mainPackage = "example";
+    mainProgram = "example";
   };
 }
