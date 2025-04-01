@@ -1,6 +1,7 @@
 {
   mkShell,
   callPackage,
+  rustPlatform,
 
   # extra tooling
   clippy,
@@ -12,6 +13,10 @@ let
 in
 mkShell {
   inputsFrom = [ defaultPackage ];
+
+  env = {
+    RUST_SRC_PATH = rustPlatform.rustLibSrc;
+  };
 
   packages = [
     clippy
